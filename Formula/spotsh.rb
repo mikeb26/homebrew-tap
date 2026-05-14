@@ -6,11 +6,14 @@ class Spotsh < Formula
   license "AGPL-3.0-only"
   head "https://github.com/mikeb26/spotsh.git", branch: "main"
 
+  depends_on "make" => :build
   depends_on "go" => :build
 
   def install
-    ldflags = "-s -w"
-    system "go", "build", *std_go_args(output: bin/"spotsh", ldflags: ldflags), "./cmd/spotsh"
+    # ENV.deparallelize  # if your formula fails when building in parallel
+    (buildpath/"cmd/spotsh/version.txt").write "v0.20.2b"
+    system "make", "build"
+    bin.install "spotsh"
   end
 
   test do
