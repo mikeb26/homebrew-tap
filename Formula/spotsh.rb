@@ -12,6 +12,7 @@ class Spotsh < Formula
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
     File.write buildpath/"cmd/spotsh/version.txt", "v0.20.2b"
+    system "make", "vendor"
     system "make", "build"
     bin.install "spotsh"
   end
