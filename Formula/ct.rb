@@ -1,8 +1,8 @@
 class Ct < Formula
   desc "Chess Tools"
   homepage "https://github.com/mikeb26/chesstools"
-  url "https://github.com/mikeb26/chesstools/archive/refs/tags/v0.10.2.tar.gz"
-  sha256 "96cdd8da5e56514d3a79405dbb3c27060d36e8bcbb468b4a6663ded50863192f"
+  url "https://github.com/mikeb26/chesstools/archive/refs/tags/v0.10.4.tar.gz"
+  sha256 "9df26ac0eaff8925ec14462f7f9bc2d51681da9dd79095bca1dcadeafc01aab4"
   license "MIT"
   head "https://github.com/mikeb26/chesstools.git", branch: "main"
 
