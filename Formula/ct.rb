@@ -1,4 +1,4 @@
-class Spotsh < Formula
+class Ct < Formula
   desc "Chess Tools"
   homepage "https://github.com/mikeb26/chesstools"
   url "https://github.com/mikeb26/spotsh/archive/refs/tags/v0.10.2.tar.gz"
