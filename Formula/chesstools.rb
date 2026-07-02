@@ -1,8 +1,8 @@
 class Chesstools < Formula
   desc "Chess Tools"
   homepage "https://github.com/mikeb26/chesstools"
-  url "https://github.com/mikeb26/chesstools/archive/refs/tags/v0.10.6.tar.gz"
-  sha256 "e026c0b2fc9f2de2591d1fcf3cd4a8e34031ec86402740b9edc59c2b25b1f21c"
+  url "https://github.com/mikeb26/chesstools/archive/refs/tags/v0.11.0.tar.gz"
+  sha256 "70d6fd080bbebbad07e3d4fe5d6fc57fc094862965844ba002017cca194fc8e6"
   license "MIT"
   head "https://github.com/mikeb26/chesstools.git", branch: "main"
 
@@ -11,7 +11,7 @@ class Chesstools < Formula
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
-    File.write buildpath/"cmd/ct/version.txt", "v0.10.6b"
+    File.write buildpath/"cmd/ct/version.txt", "v0.11.0b"
     system "make", "build"
     bin.install "ct"
   end
