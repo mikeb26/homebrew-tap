@@ -11,7 +11,7 @@ class Ct < Formula
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
-    File.write buildpath/"cmd/ct/version.txt", "v0.10.2b"
+    File.write buildpath/"cmd/ct/version.txt", "v0.10.4b"
     system "make", "build"
     bin.install "ct"
   end
