@@ -1,4 +1,4 @@
-class Ct < Formula
+class Chesstools < Formula
   desc "Chess Tools"
   homepage "https://github.com/mikeb26/chesstools"
   url "https://github.com/mikeb26/chesstools/archive/refs/tags/v0.10.4.tar.gz"
@@ -17,6 +17,6 @@ class Ct < Formula
   end
 
   test do
-    assert_match "ct-", shell_output("#{bin}/ct version")
+    assert_match "chesstools-", shell_output("#{bin}/ct version")
   end
 end
